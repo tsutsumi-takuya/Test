@@ -1,24 +1,33 @@
-# README
+### 『名称』
+- Gather
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 『概要』
 
-Things you may want to cover:
+- レスポンシブWebデザインである
+- ユーザー登録を行い自分好みのギャラリーを作成出来る
+- 他のユーザーのFollow、投稿に対しLikeも行える
+- 検索機能があり自分好みの写真の検索が出来る
+- 自分が作成した投稿は編集、消去を行える(自分のみ)
 
-* Ruby version
+### 『テーマ』
 
-* System dependencies
+- 写真共有サイト
 
-* Configuration
+### 『作成理由』
 
-* Database creation
+- 作成者自身が写真を撮ることもあり、使用しやすい写真共有サイトを作成したいと考えた為
+- 様々な方々の価値観や表現力を写真に込めることにより、自分自身の表現力を広げたいと考えた為
 
-* Database initialization
+### 『ターゲットユーザー』
 
-* How to run the test suite
+- 10代後半〜60代まで(スマートフォンを使用出来る全ての年齢層)
 
-* Services (job queues, cache servers, search engines, etc.)
+### 『主な利用シーン』
 
-* Deployment instructions
+- 写真を撮影し、共有したいと思った時
+- 家族や友人に会った時の近況報告
 
-* ...
+## 設計書
+
+### 機能一覧
+<https://docs.google.com/spreadsheets/d/1UgK-6l38k5T81XjcTIn7CHnGRkB_sBXS5xQWAVhWmks/edit#gid=0>
