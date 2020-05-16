@@ -1,6 +1,4 @@
 
-![cafe](images/cafe.jpg "cafe")
-
 ### 『名称』
 
 - Gather
