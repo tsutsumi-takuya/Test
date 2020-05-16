@@ -27,7 +27,6 @@
 - 写真を撮影し、共有したいと思った時
 - 家族や友人に会った時の近況報告
 
-## 設計書
+### 『機能一覧』
 
-### 機能一覧
-<https://docs.google.com/spreadsheets/d/1UgK-6l38k5T81XjcTIn7CHnGRkB_sBXS5xQWAVhWmks/edit#gid=0>
+<https://docs.google.com/spreadsheets/d/1XQu8emK0OfJdrEPPU2MgpBzk2dSFbKLEvdqQVABqkJ8/edit#gid=0>
