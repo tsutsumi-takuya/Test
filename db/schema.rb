@@ -19,7 +19,14 @@ ActiveRecord::Schema.define(version: 2020_05_18_024340) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "photo_comments", force: :cascade do |t|
+  create_table "relationships", force: :cascade do |t|
+    t.integer "follow_id"
+    t.integer "follower_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shop_comments", force: :cascade do |t|
     t.text "comment"
     t.integer "user_id"
     t.string "photo_id"
@@ -27,16 +34,10 @@ ActiveRecord::Schema.define(version: 2020_05_18_024340) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "photos", force: :cascade do |t|
+  create_table "shops", force: :cascade do |t|
     t.integer "user_id"
+    t.string "photo_id"
     t.text "caption"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "relationships", force: :cascade do |t|
-    t.integer "follow_id"
-    t.integer "follower_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
