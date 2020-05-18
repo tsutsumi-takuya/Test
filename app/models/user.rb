@@ -7,7 +7,7 @@ class User < ApplicationRecord
     #userは1対Nの1側(複数のNを所持する)
 	#class userが削除された際は以下も削除される(dependent: :destroy)
 	has_many :photos, dependent: :destroy
-	has_many :likes, dependend: :destroy
+	has_many :likes, dependent: :destroy
 	has_many :comments, dependent: :destroy
 
 end
