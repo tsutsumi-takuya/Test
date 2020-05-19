@@ -3,29 +3,29 @@ class ShopCommentsController < ApplicationController
 	before_action :authenticate_user!
 
 	def create
-		photo = Photo.find(params[:photo_id])
-		photo_comment = Comment.new(comment_params)
-		photo_comment.user_id = current_user.id
-		photo_comment.photo_id = photo.id
-		photo_comment.save
+		shop = Shop.find(params[:shop_id])
+		shop_comment = Shopcomment.new(shop_comment_params)
+		shop_comment.user_id = current_user.id
+		shop_comment.shop_id = shop.id
+		shop_comment.save
 		redirect_back(fallback_location: root_path)
 		# 他の画面に遷移しない
 	end
 
 	def destroy
-		photo = Photo.find(params[:photo_id])
-		photo_comment =Comment.find_by(user_id: current_user.id, photo_id: params[:photo_id])
-		photo_comment.user_id = current_user.id
-		photo_comment.photo_id = photo.id
-		photo_comment.destory
+		shop = Shop.find(params[:shop_id])
+		shop_comment =Comment.find_by(user_id: current_user.id, shop_id: params[:shop_id])
+		shop_comment.user_id = current_user.id
+		shop_comment.shop_id = shop.id
+		shop_comment.destory
 		redirect_back(fallback_location: root_path)
 		# 他の画面に遷移しない
 	end
 
 	private
 
-	def photo_comment_params
-		params.require(:comment).permit(:comment)
+	def shop_comment_params
+		params.require(:shop_comment).permit(:comment)
 	end
 
 end
